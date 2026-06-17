@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>E-Commerce Store</title>
-
-    <style>
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -106,66 +100,3 @@
             padding: 20px;
             color: gray;
         }
-    </style>
-</head>
-
-<body>
-
-<nav>
-    <div class="logo">ShopSphere</div>
-
-    <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Categories</a>
-        <a href="#">Contact</a>
-    </div>
-</nav>
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h1>
-            Welcome,
-            <span class="highlight" th:text="${username}"></span>
-        </h1>
-
-        <p>
-            Learn Spring Boot by building a real-world E-Commerce application
-            from scratch.
-        </p>
-
-        <a href="#" class="btn">
-            Explore Products
-        </a>
-
-        <div class="stats">
-
-            <div class="stat-card">
-                <h2 th:text="${productCount}"></h2>
-                <p>Products</p>
-            </div>
-
-            <div class="stat-card">
-                <h2>1</h2>
-                <p>Spring Boot Project</p>
-            </div>
-
-            <div class="stat-card">
-                <h2>Day 2</h2>
-                <p>Learning Progress</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<footer>
-    Built with Spring Boot + Thymeleaf 🚀
-</footer>
-
-</body>
-</html>
